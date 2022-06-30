@@ -8,6 +8,7 @@
       :steps="steps"
       :ingredients="ingredients"
       :url="url"
+      :image="image"
     />
   </div>
 </template>
@@ -29,6 +30,7 @@ export default {
       steps: Array,
       ingredients: Array,
       url: '',
+      image: '',
     }
   },
   methods: {
@@ -38,6 +40,7 @@ export default {
       this.steps = object.steps
       this.ingredients = object.ingredients
       this.url = object.url
+      this.image = object.image
     },
   },
 }
