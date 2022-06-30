@@ -7,6 +7,7 @@
       :time="time"
       :steps="steps"
       :ingredients="ingredients"
+      :url="url"
     />
   </div>
 </template>
@@ -27,6 +28,7 @@ export default {
       time: '',
       steps: Array,
       ingredients: Array,
+      url: '',
     }
   },
   methods: {
@@ -35,6 +37,7 @@ export default {
       this.time = object.time
       this.steps = object.steps
       this.ingredients = object.ingredients
+      this.url = object.url
     },
   },
 }

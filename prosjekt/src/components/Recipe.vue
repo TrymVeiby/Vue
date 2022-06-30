@@ -1,13 +1,13 @@
 <template>
   <div class="recipe">
     <h1>{{ title }}</h1>
-    <h2>{{ time }}</h2>
-    <li v-bind:key="step" v-for="step in steps">
-      {{ step }}
-    </li>
-    <br />
+    <a :href="url">{{ url }}</a>
     <li v-bind:key="ingredient" v-for="ingredient in ingredients">
       {{ ingredient }}
+    </li>
+    <br />
+    <li v-bind:key="step" v-for="step in steps">
+      {{ step }}
     </li>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
     time: String,
     steps: [],
     ingredients: [],
+    url: String,
   },
 }
 </script>
